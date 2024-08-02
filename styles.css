@@ -1,0 +1,384 @@
+﻿/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and font settings */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f4f4f4 0%, #e1e1e1 100%);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header styling */
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #333;
+    padding: 0 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Remove hover effect from the topbar */
+.topbar:hover {
+    background-color: #333;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.topbar .logo img {
+    height: 50px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.topbar .logo:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Navbar and dropdown styling */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    top: 100%;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    padding-left: 24px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Main content styling */
+main.content {
+    padding: 80px 20px 20px;
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+main.content:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
+
+h1, h2, h3 {
+    color: #222;
+    margin-bottom: 20px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h1:hover, h2:hover, h3:hover {
+    color: #1a73e8;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Team list styling */
+.team-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.team-list li {
+    margin-bottom: 10px;
+}
+
+.team-list a {
+    color: #1a73e8;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.team-list a:hover {
+    color: #0056b3;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Footer styling */
+footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
+	transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #444;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .topbar .logo {
+        margin-bottom: 15px;
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+
+    .dropdown-content a {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dropbtn {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+}
+
+
+
+
+
+/* Style for Blox Brawlers section */
+.blox-brawlers-info {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.blox-brawlers-info:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.blox-image {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blox-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.blox-text {
+    width: 60%;
+}
+
+.blox-text h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.blox-text p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Overview section styling */
+.overview {
+    margin-top: 40px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.overview h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.overview-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.overview-item {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.overview-item:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    transform: scale(1.02);
+}
+
+.overview-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.overview-image:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    transform: scale(1.05);
+}
+
+.overview-text {
+    flex: 1;
+}
+
+.overview-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.overview-text p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+/* Video section styling */
+.overview-video {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.overview-video h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.overview-video iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.overview-video iframe:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    transform: scale(1.02);
+}
+
+.overview-video p {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #555;
+}
