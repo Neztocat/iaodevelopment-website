@@ -3,50 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IAO Development - Home</title>
-    <link rel="shortcut icon" type="image/png" href="images\logo.png">
+    <title>Neztorion Studios</title>
+    <base target="_blank">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="topbar">
-        <a href="index.html" class="logo"><img src="images\logo.png" alt="Logo"></a>
-        <div class="navbar">
-            <div class="dropdown">
-                <button class="dropbtn">Projects</button>
-                <div class="dropdown-content">
-                    <a href="bloxbrawlers.html">Blox Brawlers</a>
+	<!-- Topbar -->
+		<header>
+			<div class="topbar">
+				<a href="index.html">
+				<img src="images/logo.png" alt="Neztorion Logo" class="logo animated-logo" style="border-width: 0px"></a>
+				<nav>
+					<ul>
+						<li><a class="dropdown" href="projects.html" target="_self">Projects</a>
+							<ul class="dropdown-content">
+								<li><a href="base_defenders.html"  target="_self">Base Defenders</a></li>
+							</ul>
+						</li>
+						<li><a class="dropdown">Socials</a>
+							<ul class="dropdown-content">
+								<li><a href="https://www.roblox.com/groups/13163254">Roblox</a></li>
+								<li><a href="https://discord.gg/zDT4cf4ZEG">Discord</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+	<main>
+		<!-- Main Section -->
+		<section class="hero">
+			<div class="hero-content">
+				<h1 class="fade-in">Welcome to <span>Neztorion Studios</span></h1>
+				<p class="slide-in">Creating next-level experiences for Roblox. Explore, engage, and enjoy.</p>
+				<a class="btn btn-pulse" href="projects.html" target="_self">Explore Our Projects</a>
+			</div>
+		</section>
+		
+		<section class="about animated-slide">
+    <h2 class="about-title zoom-in">About Us</h2>
+    <p class="slide-in-text">
+        Neztorion Studios brings together a talented team to build engaging, innovative Roblox games.
+    </p>
+    <div class="team-container">
+        <div class="team-member">
+            <a href="https://www.youtube.com/@Neztocat" class="team-link">
+                <div class="member-info">
+                    <h3>Neztocat</h3>
+                    <p>Founder &amp; Programmer</p>
                 </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Socials</button>
-                <div class="dropdown-content">
-                    <a href="https://www.roblox.com/groups/13163254" target="_blank">Roblox Group</a>
-                    <a href="https://discord.gg/zDT4cf4ZEG" target="_blank">Discord Server</a>
+            </a>
+        </div>
+        <div class="team-member">
+            <a href="https://www.youtube.com/@mysticly-me" class="team-link">
+                <div class="member-info">
+                    <h3>Mystic</h3>
+                    <p>Animator</p>
                 </div>
-            </div>
+            </a>
+        </div>
+        <div class="team-member">
+            <a href="https://www.youtube.com/@mathoe123" class="team-link">
+                <div class="member-info">
+                    <h3>Mathow</h3>
+                    <p>Modeller</p>
+                </div>
+            </a>
+        </div>
+        <div class="team-member">
+            <a href="https://www.youtube.com/@tnowen4351" class="team-link">
+                <div class="member-info">
+                    <h3>Tnowen</h3>
+                    <p>Art Director</p>
+                </div>
+            </a>
         </div>
     </div>
-        
-    <main class="content">
-        <h1>Welcome to IAO Development</h1>
-        <p>We are a small team of developers dedicated to creating impressive games for Roblox. Explore our projects and learn more about what we do.</p>
-        <h2>About Us</h2>
-        <p>IAO Development is a Roblox development group known for producing games, services, and more.
-        <br>We have a talented team of developers, including:</p>
-        
-   	<ul class="team-list">
-    		<li><a href="https://www.youtube.com/@Neztocat" target="_blank">Neztocat (Founder &amp; Programmer)</a></li>
-    		<li><a href="https://www.youtube.com/@mysticly-me" target="_blank">Mystic (Animator)</a></li>
-    		<li><a href="https://www.youtube.com/@mathoe123" target="_blank">Mathow (Modeller)</a></li>
-    		<li><a href="https://www.youtube.com/@tnowen4351" target="_blank">Tnowen (Art Director)</a></li>
-    		
-	</ul>
-	</main>
+</section>
+
+</main>
 
     <footer>
-        <p>&copy; 2024 IAO Development. All rights reserved.</p>
-    </footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Neztorion Studios. All rights reserved.</p>
+    </div>
+</footer>
+
 
     <script src="script.js"></script>
 </body>
